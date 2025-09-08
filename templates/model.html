@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+        <form action="/output" method="post">
+
+            <label for="Married">Married : </label>
+            <select name="Married" id="Married">
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+                <br>
+
+
+            <label for="dependents">How many people are dependent on you?</label>
+            <input type="text" id="dependents" name="Dependents" >
+                <br>
+
+
+            <label for="Education">Education :</label>
+            <select name="Education" id="Education">
+                <option value="">--Select--</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Not Graduate">Not Graduate</option>
+            </select>
+                <br>
+
+
+            <label for="Self_Employed">Self_Employed :</label>
+            <select name="Self_Employed" id="Self_Employed">
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+
+
+            <label for="ApplicantIncome">ApplicantIncome :</label>
+            <input type="text" id="ApplicantIncome" name="ApplicantIncome" placeholder="Enter your earning">
+            <br>
+
+
+            <label for="CoapplicantIncome">CoapplicantIncome :</label>
+            <input type="text" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Enter your 'wife/husband' income ear LoanAmount">
+            <br>
+            <label for="LoanAmount"> LoanAmount :</label>
+            <input type="text" id="LoanAmount" name="LoanAmount" placeholder="Enter LoanAmount in RS -">
+            <br>
+            
+             <label for="Loan_Amount_Term"> Loan_Amount_Term :</label>
+            <input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="Loan Duration in year ">
+            <br>
+            <label for="Credit_History">Credit History:</label>
+            <select id="Credit_History" name="Credit_History">
+            <option value="">--Select--</option>
+            <option value="1">Good (Has credit history)</option>
+            <option value="0">Bad / No credit history</option>
+            </select>
+        <br>
+        <label for="Property_Area">Property Area:</label>
+        <select id="Property_Area" name="Property_Area">
+        <option value="">--Select--</option>
+        <option value="Urban">Urban</option>
+        <option value="Semiurban">Semiurban</option>
+        <option value="Rural">Rural</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+        </form>
+
+        
+    </div>
+</body>
+</html>
