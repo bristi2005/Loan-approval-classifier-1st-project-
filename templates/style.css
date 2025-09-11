@@ -1,11 +1,94 @@
-*body{
+/* General page styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #f1f8e9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+
+/* Container for the loan form */
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    width: 450px;
+    animation: fadeIn 0.7s ease-in-out;
 }
-bg-color{
-    background-color: #f2f2f2;
+
+/* Title */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input fields & dropdowns */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    background: #ffffff;
+    box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100%;
+    background: #007bff;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Small note text */
+.note {
+    font-size: 13px;
+    color: #777;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Animation for smooth entry */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
