@@ -1,4 +1,4 @@
-/* General page styling */
+
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #e3f2fd, #f1f8e9);
@@ -8,8 +8,6 @@ body {
     height: 100vh;
     margin: 0;
 }
-
-/* Container for the loan form */
 .container {
     background: #ffffff;
     padding: 30px 40px;
@@ -18,8 +16,6 @@ body {
     width: 450px;
     animation: fadeIn 0.7s ease-in-out;
 }
-
-/* Title */
 h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -29,8 +25,6 @@ h2 {
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
 }
-
-/* Labels */
 label {
     display: block;
     margin: 12px 0 6px;
@@ -59,8 +53,6 @@ select:focus {
     box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.3);
     outline: none;
 }
-
-/* Submit Button */
 input[type="submit"] {
     width: 100%;
     background: #007bff;
@@ -78,16 +70,13 @@ input[type="submit"]:hover {
     background: #0056b3;
     transform: scale(1.02);
 }
-
-/* Small note text */
 .note {
     font-size: 13px;
     color: #777;
     margin-top: -10px;
     margin-bottom: 15px;
+    text-align: center;
 }
-
-/* Animation for smooth entry */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
