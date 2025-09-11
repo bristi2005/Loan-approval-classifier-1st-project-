@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loan Prediction Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <h1>Loan Prediction Form</h1>
     <div>
+        
+            <label for="Applicantname">Applicant Name :</label>
+            <input type="text" id="Applicantname" name="Applicantname" placeholder="Enter your name">
+            <br>
 
+            <label for="contact_number">Contact Number :</label>
+            <input type="text" id="contact_number" name="contact_number" placeholder="Enter your contact number">
+            <br>
+
+            <label for="email">E-mail Id :</label>
+            <input type="text" id="email" name="email" placeholder="Enter your E-mail Id">
+            <br>
         <form action="/output" method="post">
-
-            <label for="Married">Married : </label>
-            <select name="Married" id="Married">
+            <label for="Marital_status">Marital Status : </label>
+            <select name="Marital_status" id="Marital_status">
                 <option value="">--Select--</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select>
-                <br>
-
+            <br>
 
             <label for="dependents">How many people are dependent on you?</label>
-            <input type="text" id="dependents" name="Dependents" >
-                <br>
-
+            <input type="text" id="dependents" name="Dependents">
+            <br>
 
             <label for="Education">Education :</label>
             <select name="Education" id="Education">
@@ -30,52 +40,61 @@
                 <option value="Graduate">Graduate</option>
                 <option value="Not Graduate">Not Graduate</option>
             </select>
-                <br>
+            <br>
 
+            <label for="Gender">Gender :</label>
+            <select name="Gender" id="Gender">
+                <option value="">--Select--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Trans">Trans</option>
+                <option value="others">Others</option>
+            </select>
+            <br>
 
-            <label for="Self_Employed">Self_Employed :</label>
+            <label for="Self_Employed">Self Employed :</label>
             <select name="Self_Employed" id="Self_Employed">
                 <option value="">--Select--</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select>
             <br>
-
-
-            <label for="ApplicantIncome">ApplicantIncome :</label>
+            
+            <label for="ApplicantIncome">Applicant Income :</label>
             <input type="text" id="ApplicantIncome" name="ApplicantIncome" placeholder="Enter your earning">
             <br>
 
-
-            <label for="CoapplicantIncome">CoapplicantIncome :</label>
-            <input type="text" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Enter your 'wife/husband' income ear LoanAmount">
+            <label for="CoapplicantIncome">Coapplicant Income :</label>
+            <input type="text" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Enter spouse income">
             <br>
-            <label for="LoanAmount"> LoanAmount :</label>
-            <input type="text" id="LoanAmount" name="LoanAmount" placeholder="Enter LoanAmount in RS -">
+
+            <label for="LoanAmount">Loan Amount :</label>
+            <input type="text" id="LoanAmount" name="LoanAmount" placeholder="Enter Loan Amount in Rs">
             <br>
             
-             <label for="Loan_Amount_Term"> Loan_Amount_Term :</label>
-            <input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="Loan Duration in year ">
+            <label for="Loan_Amount_Term">Loan Amount Term :</label>
+            <input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="Loan Duration in years">
             <br>
+
             <label for="Credit_History">Credit History:</label>
             <select id="Credit_History" name="Credit_History">
-            <option value="">--Select--</option>
-            <option value="1">Good (Has credit history)</option>
-            <option value="0">Bad / No credit history</option>
+                <option value="">--Select--</option>
+                <option value="1">Good (Has credit history)</option>
+                <option value="0">Bad / No credit history</option>
             </select>
-        <br>
-        <label for="Property_Area">Property Area:</label>
-        <select id="Property_Area" name="Property_Area">
-        <option value="">--Select--</option>
-        <option value="Urban">Urban</option>
-        <option value="Semiurban">Semiurban</option>
-        <option value="Rural">Rural</option>
-        </select>
-        <br>
-        <button type="submit">Submit</button>
-        </form>
+            <br>
 
-        
+            <label for="Property_Area">Property Area:</label>
+            <select id="Property_Area" name="Property_Area">
+                <option value="">--Select--</option>
+                <option value="Urban">Urban</option>
+                <option value="Semiurban">Semiurban</option>
+                <option value="Rural">Rural</option>
+            </select>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
 </html>
