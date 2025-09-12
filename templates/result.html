@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
 </head>
 <body>
-    <div>
-        <h1>Wellcomr</h1>
+    <div  id="result">
+        
+        <h1 id="result_line">Welcome</h1>
         {% if value==1%}
-        <h2>your loan is approved</h2>
+        <h2 id="result_message">Your loan is approved</h2>
         {%else%}
-        <h2>your loan is rejected</h2>
+        <h2 id="result_message">Your loan is rejected</h2>
         {% endif %}
     </div>
 </body>
