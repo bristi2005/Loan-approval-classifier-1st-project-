@@ -1,1 +1,1 @@
-alert("login into loan prediction Form")
+// alert("login into loan prediction Form")
